@@ -73,14 +73,14 @@ const Menu = () => {
             <span className="text-lg font-medium">Scan QR Code</span>
           </button>
           <button
-            onClick={() => handleNavigation("/reports")}
+            // onClick={() => handleNavigation("/reports")}
             className="w-full flex items-center px-4 py-3 space-x-3 text-gray-700 bg-gray-200 rounded-lg hover:bg-gray-300 focus:ring-4 focus:ring-gray-400"
           >
             <FaChartBar className="text-xl" />
             <span className="text-lg font-medium">View Reports</span>
           </button>
           <button
-            onClick={() => handleNavigation("/settings")}
+            // onClick={() => handleNavigation("/settings")}
             className="w-full flex items-center px-4 py-3 space-x-3 text-gray-700 bg-gray-200 rounded-lg hover:bg-gray-300 focus:ring-4 focus:ring-gray-400"
           >
             <FaCog className="text-xl" />
@@ -140,9 +140,7 @@ const Menu = () => {
         <h1 className="text-xl font-extrabold text-gray-800 mb-4 text-center p-4">
           Allied welcomes you , let's get started on something great! 
         </h1>
-        <p className="text-gray-600 font-semibold text-center">
-          Use the menu to navigate through the app.
-        </p>
+      
       </div>
     </div>
   );
