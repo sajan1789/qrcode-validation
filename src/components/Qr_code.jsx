@@ -197,7 +197,10 @@ const QRCodeComponent = () => {
                   delay={300}
                   onError={(err) => setError(err.message)}
                   onScan={handleQrCodeResult}
-                  style={{ width: "100%", maxWidth: "300px" }}
+                  style={{ width: "100%", }}
+                  constraints={{
+                    video: { facingMode: "environment" }, // Explicitly use rear camera
+                  }}
                 />
                 <p className="text-gray-600 mt-4">Scan a QR code to proceed</p>
                 <label className="mt-4 px-4 py-2 bg-green-500 text-white rounded-lg cursor-pointer hover:bg-green-600 transition">
